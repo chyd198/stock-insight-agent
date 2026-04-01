@@ -1,3 +1,4 @@
+import os
 from connectonion import Agent, host
 
 from tools.price import get_price
@@ -35,4 +36,5 @@ def create_agent():
     )
 
 if __name__ == "__main__":
-    host(create_agent)
+    port = int(os.environ.get("PORT", 8000))
+    host(create_agent, port=port)
