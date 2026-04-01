@@ -2,7 +2,8 @@
 
 > A conversational AI agent built with ConnectOnion that analyzes stocks using real-time price data, moving average trend signals, and recent news — deployed as a live web service.
 
-**Live demo:** [your-railway-url-here]  
+**Live demo:** [chat.openonion.ai](https://chat.openonion.ai/0x2f68a71646c1d50a40b435a3a2ace60273b3c91fb8f3c5185305d5d6de6cd89c) · invite code: `OpenOnion`  
+**API:** `https://confident-blessing-production-ff81.up.railway.app`  
 **Built with:** [ConnectOnion](https://connectonion.com) · Python · yfinance · Railway
 
 ---
@@ -83,7 +84,7 @@ stock-insight-agent/
 
 ```bash
 # Clone and install
-git clone https://github.com/your-username/stock-insight-agent
+git clone https://github.com/chyd198/stock-insight-agent
 cd stock-insight-agent
 pip install -r requirements.txt
 
@@ -94,7 +95,7 @@ export OPENAI_API_KEY=sk-...
 python agent.py
 ```
 
-Then open the ConnectOnion chat UI and connect to your local agent.
+Then open the ConnectOnion chat UI at `https://chat.openonion.ai/<your-agent-address>` — the address is printed in the terminal when the agent starts. Enter invite code `OpenOnion` to authenticate.
 
 Try asking:
 - `"Analyze AAPL"`
@@ -160,5 +161,5 @@ railway up
 David Chen — final-year CS (AI) student at UNSW Sydney, graduating May 2026.  
 Previously interned at Hundsun Technologies (SQL/data pipelines for financial systems) and SUPERPOP Information Technology (full-stack React/Node.js).
 
-GitHub: [your-github]  
+GitHub: [chyd198](https://github.com/chyd198)  
 Built as a portfolio project using the [ConnectOnion](https://connectonion.com) framework.
