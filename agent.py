@@ -37,4 +37,9 @@ def create_agent():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
+    # Debug: print environment variables (mask the key)
+    api_key = os.environ.get("OPENAI_API_KEY", "")
+    print(f"[DEBUG] OPENAI_API_KEY exists: {bool(api_key)}, length: {len(api_key)}")
+    if api_key:
+        print(f"[DEBUG] Key starts with: {api_key[:20]}...")
     host(create_agent, port=port)
